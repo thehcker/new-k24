@@ -19,8 +19,10 @@
     	}
     	@media (max-width: 767px){
     		.logo {
-    			height: 300px;
-    			width: 70%;
+    			height: 375px;
+    			width: 100%;
+    			transition: width 0.5s;
+  				max-width: 70vw;
     		}
     	}
     	/*@media (max-width: 500px;){
@@ -40,10 +42,10 @@
     		padding-top: 6px;
     		background-color: blue;
     	}
-    	#fbShare:hover
-    	{
-cursor: pointer;
+    	#fbShare:hover {
+			cursor: pointer;
     	}
+
     </style>
     <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
 
@@ -78,8 +80,6 @@ cursor: pointer;
 						    	<div class="col-12 col-lg my-3"> -->
 						    	<span id="fbShare" class="social-facebook mx-3"><i class="icons fab fa-facebook mr-1 my-3"></i></span>
 						        <span id="twitterShare" class="social-twitter mx-3"><a href="#" target="_blank"><i class="icons fab fa-twitter mx-1 my-3"></i></a></span>
-						        <!-- <span class="social-dribble"><a href="#" target="_blank"><i class="icons fab fa-dribbble mx-1 my-3"></i></a></span>
-						        <span class="social-google"><a href="#" target="_blank"><i class="icons fab fa-google-plus mx-1 my-3"></i></a></span> -->
 						        <span id="igShare" class="social-google mx-3"><a href="#" target="_blank"><i class="icons fab fa-instagram mx-1 my-3"></i></a></span>
 						    	</div>
 				        	</div>
@@ -104,8 +104,6 @@ cursor: pointer;
 						    	<div class="col-12 col-lg my-3"> -->
 						    	<span id="fbShare" class="social-facebook mx-3"><a href="#" target="_blank"><i class="icons fab fa-facebook mr-1 my-3"></i></a></span>
 						        <span id="twitterShare" class="social-twitter mx-3"><a href="#" target="_blank"><i class="icons fab fa-twitter mx-1 my-3"></i></a></span>
-						        <!-- <span class="social-dribble"><a href="#" target="_blank"><i class="icons fab fa-dribbble mx-1 my-3"></i></a></span>
-						        <span class="social-google"><a href="#" target="_blank"><i class="icons fab fa-google-plus mx-1 my-3"></i></a></span> -->
 						        <span id="igShare" class="social-google mx-3"><a href="#" target="_blank"><i class="icons fab fa-instagram mx-1 my-3"></i></a></span>
 						    	</div>
 				        	</div>
@@ -130,8 +128,6 @@ cursor: pointer;
 						    	<div class="col-12 col-lg my-3"> -->
 						    	<span id="fbShare" class="social-facebook mx-3"><a href="#" target="_blank"><i class="icons fab fa-facebook mr-1 my-3"></i></a></span>
 						        <span id="twitterShare" class="social-twitter mx-3"><a href="#" target="_blank"><i class="icons fab fa-twitter mx-1 my-3"></i></a></span>
-						        <!-- <span class="social-dribble"><a href="#" target="_blank"><i class="icons fab fa-dribbble mx-1 my-3"></i></a></span>
-						        <span class="social-google"><a href="#" target="_blank"><i class="icons fab fa-google-plus mx-1 my-3"></i></a></span> -->
 						        <span id="igShare" class="social-google mx-3"><a href="#" target="_blank"><i class="icons fab fa-instagram mx-1 my-3"></i></a></span>
 						    	</div>
 				        	</div>
@@ -156,8 +152,6 @@ cursor: pointer;
 						    	<div class="col-12 col-lg my-3"> -->
 						    	<span id="fbShare" class="social-facebook mx-3"><a href="#" target="_blank"><i class="icons fab fa-facebook mr-1 my-3"></i></a></span>
 						        <span id="twitter" class="social-twitter mx-3"><a href="#" target="_blank"><i class="icons fab fa-twitter mx-1 my-3"></i></a></span>
-						        <!-- <span class="social-dribble"><a href="#" target="_blank"><i class="icons fab fa-dribbble mx-1 my-3"></i></a></span>
-						        <span class="social-google"><a href="#" target="_blank"><i class="icons fab fa-google-plus mx-1 my-3"></i></a></span> -->
 						        <span id="igShare" class="social-google mx-3"><a href="#" target="_blank"><i class="icons fab fa-instagram mx-1 my-3"></i></a></span>
 						    	</div>
 				        	</div>
@@ -188,8 +182,6 @@ cursor: pointer;
 		    	<div class="col-12 col-lg my-3">
 		    	<span id="fbShare" class="social-facebook mx-3"><a href="#" target="_blank"><i class="icons fab fa-facebook mr-1 my-3"></i></a></span>
 		        <span id="twitterShare" class="social-twitter mx-3"><a href="#" target="_blank"><i class="icons fab fa-twitter mx-1 my-3"></i></a></span>
-		        <!-- <span class="social-dribble"><a href="#" target="_blank"><i class="icons fab fa-dribbble mx-1 my-3"></i></a></span>
-		        <span class="social-google"><a href="#" target="_blank"><i class="icons fab fa-google-plus mx-1 my-3"></i></a></span> -->
 		        <span id="igShare" class="social-google mx-3"><a href="#" target="_blank"><i class="icons fab fa-instagram mx-1 my-3"></i></a></span>
 		    	</div>
 				<!-- <div class="col-12 col-lg-3 my-3">
@@ -241,7 +233,7 @@ cursor: pointer;
 			return false;
 }
 
-igShare.onclick = function() {
+		igShare.onclick = function() {
 			window.open("https://instagram.com/share?url="+currentURL+"&text="+currentTitle,"","height=260,width=500,left=100,top=100,menubar=0");
 			return false;
 }
@@ -250,3 +242,4 @@ igShare.onclick = function() {
   
   </body>
 </html>
+
