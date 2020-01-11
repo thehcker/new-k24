@@ -16,17 +16,31 @@
     		.contact{
     			display: inline;
     		}
+    		.logo {
+    			width: 100%;
+    		}
+    		.klogo{
+    			display: none;
+    		}
     	}
     	@media (max-width: 767px){
     		.logo {
-    			height: 375px;
-    			width: 100%;
-    			transition: width 0.5s;
-  				max-width: 70vw;
+                height: 200%;
+                width: 200%;
+                margin-left: -330px;
+    			/*transition: width 0.5s;*/
+  				/*max-width: 70vw;
+                max-height: 70vw;*/
     		}
+            .klogo{
+                position: absolute;
+                height: 20%;
+                width: 20%;
+                margin-left: 0px;
+            }
     		.logo2 {
-    			transition: width 0.5s;
-  				max-width: 100vw;
+    			/*transition: width 0.5s;
+  				max-width: 100vw;*/
     		}
     	}
     	/*@media (max-width: 500px;){
@@ -59,9 +73,12 @@
   <body style="background-color: black;">
      
 <!-- <div class="container-fluid"> -->
+<!-- <div class="klogo"><img src="img/k-logo4.jpg"></div> -->
   <section style="background-color: black;">
+
   	<main>
 		  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		  	
 		    <ol class="carousel-indicators">
 		      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 		      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -70,7 +87,7 @@
 		    </ol>
 		    <div class="carousel-inner">
 		      <div class="carousel-item active">
-		        <img src="img/new_logo1.png" class="logo d-block w-100" alt="...">
+		        <img src="img/new_logo1.png" class="logo d-block" alt="...">
 		        
 		        <div class="carousel-caption d-none d-md-block">
 		        	<!-- Start of Google logo 1 -->
@@ -94,7 +111,7 @@
 		      	</div>
 		      </div>
 		      <div class="carousel-item">
-		        <img src="img/new_logo2.jpg" class="logo logo2 d-block w-100" alt="...">
+		        <img src="img/new_logo2.jpg" class="logo logo2 d-block" alt="...">
 		        <div class="carousel-caption d-none d-md-block">
 		         
 		         <!-- Start of Google logo 2 -->
@@ -118,7 +135,7 @@
 		        </div>
 		      </div>
 		      <div class="carousel-item">
-		        <img src="img/new_logo3.jpg" class="logo d-block w-100" alt="...">
+		        <img src="img/new_logo3.jpg" class="logo d-block" alt="...">
 		        <div class="carousel-caption d-none d-md-block">
 		         
 		         	<!-- Start of Google logo 3 -->
@@ -142,7 +159,7 @@
 		        </div>
 		      </div>
 		       <div class="carousel-item">
-		        <img src="img/new_logo4.jpg" class="logo d-block w-100" alt="...">
+		        <img src="img/new_logo4.jpg" class="logo d-block" alt="...">
 		        <div class="carousel-caption d-none d-md-block">
 		         
 		         	<!-- Start of Google logo 4 -->
